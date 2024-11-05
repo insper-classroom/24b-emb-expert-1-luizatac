@@ -66,6 +66,10 @@ typedef struct TCP_CLIENT_T_ {
 
 static err_t tcp_client_close(void *arg) {
     TCP_CLIENT_T *state = (TCP_CLIENT_T *)arg;
+    if (state == NULL) {
+        // Retorna imediatamente se state for NULL
+        return ERR_OK;
+    }
     err_t err = ERR_OK;
     if (state->tcp_pcb != NULL) {
         tcp_arg(state->tcp_pcb, NULL);
