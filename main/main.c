@@ -13,9 +13,9 @@
 #include "lwip/pbuf.h"
 #include "lwip/tcp.h"
 
-#define WIFI_SSID "LuPhone14"
-#define WIFI_PASSWORD "oscar freire"
-#define SERVER_IP "172.20.10.5"
+#define WIFI_SSID "Gabriel's Galaxy S21 5G"
+#define WIFI_PASSWORD "rnfa4694"
+#define SERVER_IP "192.168.65.182"
 
 #define TCP_PORT 5000
 #define DEBUG_printf printf
